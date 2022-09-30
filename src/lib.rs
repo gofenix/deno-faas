@@ -5,7 +5,7 @@ use deno_core::{
     error::AnyError,
     op, resolve_url_or_path, serde_v8, v8, JsRuntime,
 };
-use deno_runtime::deno_core::{Extension, FsModuleLoader, RuntimeOptions};
+use deno_core::{Extension, FsModuleLoader, RuntimeOptions};
 use serde::de::DeserializeOwned;
 
 use crate::ops::file_op::{op_read_file, op_remove_file, op_write_file};
