@@ -1,9 +1,9 @@
 use deno_core::{
-    anyhow::{anyhow, Result},
+    anyhow::{Result},
     error::AnyError,
-    op, resolve_url_or_path, serde_v8, v8, JsRuntime,
+    op,
 };
-use serde::de::DeserializeOwned;
+
 
 #[op]
 async fn op_read_file(path: String) -> Result<String, AnyError> {

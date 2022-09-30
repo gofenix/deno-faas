@@ -1,9 +1,8 @@
 use std::rc::Rc;
 
 use deno_core::{
-    anyhow::{anyhow, Result},
-    error::AnyError,
-    op, resolve_url_or_path, serde_v8, v8, JsRuntime,
+    anyhow::{Result},
+    error::AnyError, serde_v8, v8, JsRuntime,
 };
 use deno_core::{Extension, FsModuleLoader, RuntimeOptions};
 use serde::de::DeserializeOwned;
