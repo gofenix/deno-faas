@@ -1,12 +1,6 @@
-
-
 use deno_core::error::AnyError;
 
-
-
-
 use serde::{Deserialize, Serialize};
-
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Message {

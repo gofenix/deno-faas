@@ -1,9 +1,4 @@
-use deno_core::{
-    anyhow::{Result},
-    error::AnyError,
-    op,
-};
-
+use deno_core::{anyhow::Result, error::AnyError, op};
 
 #[op]
 async fn op_read_file(path: String) -> Result<String, AnyError> {
